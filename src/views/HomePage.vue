@@ -51,7 +51,7 @@
 <script>
 import Tagline from '../components/KBPTagline.vue'
 // Import images as URL assets to ensure proper base path handling
-import alexK3_1 from '../assets/alex_k3_1.svg'
+import alexK3_1 from '../assets/alex_k3_1.jpg'
 import alexK3_2 from '../assets/alex_k3_2.jpg'
 import alexK3_3 from '../assets/alex_k3_3.jpg'
 import alexK3_4 from '../assets/alex_k3_4.jpg'
