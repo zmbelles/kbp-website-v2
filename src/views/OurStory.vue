@@ -13,8 +13,11 @@
           <div class="story-section">
             <h3>Our Beginning</h3>
             <p>
-              KB Powersport was born from a shared passion for motorsports and the relentless pursuit of excellence on the track.
-              What started as weekend racing enthusiasts has evolved into a dedicated team pushing the boundaries of competitive motorsports.
+              Both Alex and Zach's stories begin at a very early age. For Zach it was the allure of watching Jeff Gordon's career in
+              NASCAR during the early 2000's. For Alex, a trip to the Wisconsin Dell's in 2003. It was there at just 3 years old watching karts go around a track
+              that he saw the potential of motorsports in his life. Alex has competed in multiple rental championships, both indoor and outdoor, with a 3rd place 
+              finish in the 2025 Norway Motorsports Park Rental League Championship. 2025 was Zach's first year in rental racing and managed several wins and 
+              many more podiums.
             </p>
           </div>
 
@@ -23,7 +26,7 @@
             <p>
               Driven by passion. Defined by precision. These aren't just words to us – they represent our core philosophy.
               Every race, every podium finish, and every moment on the track is a testament to our commitment to excellence
-              and the pursuit of motorsport perfection.
+              and the pursuit of karting perfection.
             </p>
           </div>
 
@@ -32,7 +35,7 @@
             <p>
               As we continue our journey in motorsports, we carry with us the lessons learned, the victories earned,
               and the unwavering determination to push further. Each season brings new challenges, new opportunities,
-              and new chances to prove that passion and precision can drive extraordinary results.
+              and new chances to prove that passion and precision can drive extraordinary results both on and off the track.
             </p>
           </div>
         </div>
@@ -56,7 +59,7 @@ export default {
   components: { Tagline },
   data() {
     return {
-      fbPost: 'https://www.facebook.com/zachary.belles.372/posts'
+      fbPost: 'https://www.facebook.com/profile.php?id=61579824638892'
     }
   }
 }
