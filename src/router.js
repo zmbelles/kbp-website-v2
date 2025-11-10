@@ -5,6 +5,7 @@ import OurBlog from './views/OurBlog.vue'
 import OurPictures from './views/OurPictures.vue'
 import OurPictures2025 from './views/OurPictures2025.vue'
 import OurSponsors from './views/OurSponsors.vue'
+import DriverProfiles from './views/DriverProfiles.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: OurHome },
@@ -13,6 +14,7 @@ const routes = [
   { path: '/pictures', name: 'Pictures', component: OurPictures },
   { path: '/pictures/2025', name: 'Pictures2025', component: OurPictures2025 },
   { path: '/sponsors', name: 'Sponsors', component: OurSponsors },
+  { path: '/driver-profiles', name: 'DriverProfiles', component: DriverProfiles },
 ]
 
 const router = createRouter({
