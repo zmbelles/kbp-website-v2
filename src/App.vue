@@ -7,6 +7,7 @@
         <router-link to="/story" class="nav-link">Story</router-link>
         <router-link to="/blog" class="nav-link">Blog</router-link>
         <router-link to="/pictures" class="nav-link">Pictures</router-link>
+        <router-link to="/driver-profiles" class="nav-link">Driver Profiles</router-link>
       </nav>
     </header>
 

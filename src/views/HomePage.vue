@@ -29,7 +29,7 @@
         </section>
 
         <section class="cta">
-          <h2>Ready to Ride?</h2>
+          <h2>Wanna see more?</h2>
           <router-link to="/pictures" class="cta-button">View Our Gallery</router-link>
         </section>
       </div>
