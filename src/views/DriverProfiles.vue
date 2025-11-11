@@ -11,8 +11,8 @@
             <img src="../assets/zachphoto.png" alt="Zachary Belles" />
           </div>
           <div class="profile-content">
-            <h2 class="profile-name">Zachary Belles</h2>
-            <p class="profile-meta">Yorkville, IL • Software Engineer</p>
+            <h2 class="profile-name">Zachary Belles #24</h2>
+            <p class="profile-meta">Yorkville, IL • Software Engineer • Ignite Sr</p>
 
             <div class="profile-bio">
               <p>
@@ -36,7 +36,7 @@
                 <strong>206 Senior</strong>, then into <strong>KA100</strong>, and ultimately aiming to
                 compete in <strong>Spec BMW</strong> through <strong>SCCA</strong> or
                 <strong>NASA</strong>. With a sharp mind for engineering and a growing list of results,
-                Zach aims to be the face of <strong>precision and passion</strong>.
+                Zach aims to be the face of <strong>passion and precision</strong>.
               </p>
             </div>
           </div>
@@ -48,28 +48,29 @@
 						<img src="../assets/alexphoto.png" alt="Alex 'Koolaid Man' Koleczek" />
 					</div>
 					<div class="profile-content">
-						<h2 class="profile-name">Alex "Koolaid Man" Koleczek</h2>
-						<p class="profile-meta">Tinley Park, IL • Professional Barrier Tester</p>
+						<h2 class="profile-name">Alex Koleczek #11</h2>
+						<p class="profile-meta">Tinley Park, IL • EMT in Training • 206 Sr</p>
 
-						<div class="profile-bio">
-							<p>
-								Known around the paddock as “Koolaid Man”, Alex has developed a unique talent for turning every
-								corner into an interpretive art piece. His commitment to exploring every inch of the track — and
-								sometimes the walls — has made him a fan favorite and a frequent topic of track-day lore.
-							</p>
+					<div class="profile-bio">
+						<p>
+							<strong>Alex’s passion for motorsport</strong> began six years ago when he first climbed into a <strong>cadet kart</strong> at 
+							<strong>Accelerate Indoor Speedway</strong> — now part of <strong>K1 Speed</strong>. That first experience behind the wheel 
+							sparked a deep obsession with karting and racing as a whole.
+						</p>
 
-							<p>
-								With an uncanny ability to find the limits of grip (and then a few feet past it), Alex’s racing
-								style can best be described as “fast but sideways.” His signature move — the spontaneous spin —
-								keeps marshals on their toes and photographers well employed.
-							</p>
+						<p>
+							In <strong>2025</strong>, Alex joined the <strong>Rental Championship at Norway Motorsports Park</strong>, marking his first full outdoor 
+							karting season. Despite limited experience on outdoor circuits, he quickly found speed and consistency — earning an 
+							<strong>impressive P3 finish in the championship</strong>, even after missing the final rounds due to career commitments.
+						</p>
 
-							<p>
-								Despite the occasional crash test session, Alex brings energy, humor, and a fearless attitude to
-								every race. He’s living proof that sometimes, the best way to learn the line is to overshoot it a
-								few dozen times first.
-							</p>
-						</div>
+						<p>
+							Now, Alex is focused on pushing his motorsport journey further. His sights are set on moving from <strong>4-stroke</strong> 
+							into <strong>2-stroke competition</strong>, with long-term goals of reaching the top levels of karting and eventually transitioning 
+							into cars. Through every challenge and milestone, Alex keeps one philosophy at the core of his racing journey: 
+							<em><strong>“Always moving forward.”</strong></em>
+						</p>
+					</div>
 					</div>
 				</div>
       </div>
@@ -147,11 +148,11 @@ export default {
 }
 /* Headshot */
 .profile-image-alex img {
-  width: 200%;
-  height: 200%;
+  width: 180%;
+  height: 180%;
   object-fit: cover;
-	margin-left: -5.5rem;
-	margin-top: -5rem;
+	margin-left: -5rem;
+	margin-top: -4rem;
 }
 .profile-image-alex {
   width: 160px;
