@@ -14,7 +14,7 @@
             <h3>Our Beginning</h3>
             <p>
               Both Alex and Zach's stories begin at a very early age. For Zach it was the allure of watching Jeff Gordon's career in
-              NASCAR during the early 2000's. For Alex, a trip to the Wisconsin Dell's in 2003. It was there at just 3 years old watching karts go around a track
+              NASCAR during the early 2000's. For Alex, a trip to the Wisconsin Dell's in 2012. It was there at just 5 years old watching karts go around a track
               that he saw the potential of motorsports in his life. Alex has competed in multiple rental championships, both indoor and outdoor, with a 3rd place 
               finish in the 2025 Norway Motorsports Park Rental League Championship. 2025 was Zach's first year in rental racing and managed several wins and 
               many more podiums.
