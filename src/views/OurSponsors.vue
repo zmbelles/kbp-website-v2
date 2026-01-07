@@ -1,6 +1,7 @@
 <template>
   <div class="sponsors-page">
-    <Tagline />
+    <!-- Use explicit close tag to avoid any template compiler edge cases -->
+    <Tagline></Tagline>
 
     <div class="sponsors-container">
       <div class="sponsors-card">
@@ -22,6 +23,36 @@
             <div class="sponsor-card">
               <div class="sponsor-top">
                 <div class="sponsor-logo">
+                  <img :src="rmsLogo" alt="RMS Logo" />
+                </div>
+
+                <div class="sponsor-header">
+                  <h4>RMS Kart & Performance LLC</h4>
+                  <div class="sponsor-category">Kart Racing Team & Performance Engineering</div>
+                </div>
+              </div>
+
+              <div class="sponsor-content">
+                <p>
+                  RMS Kart & Performance LLC is the primary Margay Ignite dealer at Norway Motorsports
+                  Park and offers a multitude of motorsports services including kart sales, rentals,
+                  performance tuning, and race team support. RMS is dedicated to providing top-notch
+                  service and expertise to help racers of all levels achieve their goals on the track.
+                </p>
+
+                <div class="sponsor-specialties">
+                  <div class="specialty-tag">Kart Racing Team</div>
+                  <div class="specialty-tag">Engine Tuning & Performance</div>
+                  <div class="specialty-tag">Arrive-and-Drive Programs</div>
+                  <div class="specialty-tag">Trackside Race Support</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- waiting for confirmation
+            <div class="sponsor-card">
+              <div class="sponsor-top">
+                <div class="sponsor-logo">
                   <img :src="liveWireLogo" alt="LiveWire Construction Logo" />
                 </div>
                 <div class="sponsor-header">
@@ -29,12 +60,14 @@
                   <div class="sponsor-category">Electrical Contractor</div>
                 </div>
               </div>
+
               <div class="sponsor-content">
                 <p>
                   A full-service electrical work contractor providing a wide range of electrical system solutions
                   in the healthcare, educational, industrial and utility markets. LiveWire serves customers in the
                   private, public, and government sectors with professional excellence and reliability.
                 </p>
+
                 <div class="sponsor-specialties">
                   <div class="specialty-tag">Healthcare Systems</div>
                   <div class="specialty-tag">Educational Facilities</div>
@@ -43,29 +76,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="sponsor-card">
-              <div class="sponsor-top">
-                <div class="sponsor-logo">
-                  <img :src="squigisLogo" alt="Squigi's Window Cleaning Logo" />
-                </div>
-                <div class="sponsor-header">
-                  <h4>Squigi's Window Cleaning</h4>
-                  <div class="sponsor-category">Professional Cleaning Services</div>
-                </div>
-              </div>
-              <div class="sponsor-content">
-                <p>
-                  Professional window cleaning services keeping things crystal clear. Just like how they make
-                  windows sparkle, we aim to make our racing shine on the track. Quality service you can trust.
-                </p>
-                <div class="sponsor-specialties">
-                  <div class="specialty-tag">Residential Cleaning</div>
-                  <div class="specialty-tag">Commercial Services</div>
-                  <div class="specialty-tag">Professional Results</div>
-                </div>
-              </div>
-            </div>
+            -->
           </div>
 
           <div class="partnership-section">
@@ -88,18 +99,18 @@ import Tagline from '../components/KBPTagline.vue'
 export default {
   name: 'OurSponsors',
   components: { Tagline },
-  computed: {
-    liveWireLogo() {
-      return '/kbp-website/assets/LiveWire-BZig8l9s.png'
-    },
-    squigisLogo() {
-      return '/kbp-website/assets/squigis-m-iL--th.png'
+  data() {
+    return {
+      // require() is the most compatible approach across Vue CLI/Webpack setups
+      // and guarantees a string URL for <img src="">
+      rmsLogo: require('@/assets/rms_logo.jpg')
     }
   }
 }
 </script>
 
 <style scoped>
+/* (unchanged styles) */
 .sponsors-page {
   min-height: 100vh;
   background: var(--kb-cream);
@@ -304,7 +315,6 @@ export default {
   margin: 0 auto;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .sponsors-container {
     padding: 1rem 0.5rem;
