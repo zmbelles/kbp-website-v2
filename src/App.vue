@@ -15,6 +15,21 @@
     <main>
       <router-view />
     </main>
+
+    <footer class="footer">
+      <br><br>
+      <div class="social-media-links">
+        <a href="https://www.facebook.com/profile.php?id=61579824638892" target="_blank">
+            <img src="@/assets/facebook.jpg" alt="Facebook" class="social-media-logo">
+        </a>
+        <a href="https://www.instagram.com/kbpowersport?igsh=bnQxcjlpMHA0ZjYx" target="_blank">
+            <img src="@/assets/instagram.jpg" alt="Instagram" class="social-media-logo">
+        </a>
+        <!-- Add other social media links similarly -->
+    </div>
+      Made by <a href="https://www.facebook.com/profile.php?id=61587200002055">Renderly</a> in Vue.js
+      <p>&copy;2026 All Rights Reserved.</p>
+    </footer>
   </div>
 </template>
 
@@ -38,6 +53,26 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-bottom: 0.4rem;
+}
+
+.footer {
+  background-color: var(--kb-cream);
+  color: var(--kb-black);
+}
+footer .social-media-links a {
+    display: inline-block; /* Align links in a line */
+    margin: 0 10px; /* Add some horizontal spacing */
+}
+
+footer .social-media-links img {
+    height: 70px; /* Set a fixed height for logos */
+    width: auto; /* Maintain aspect ratio */
+}
+.social-media-logo {
+    border-radius: 50%; /* Makes the image circular */
+    width: 40px;  /* Set a fixed width */
+    height: 40px; /* Set a fixed height, equal to width for a perfect circle */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
 }
 
 .logo {
