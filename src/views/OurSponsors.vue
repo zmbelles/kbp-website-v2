@@ -49,6 +49,34 @@
               </div>
             </div>
 
+            <div class="sponsor-card">
+              <div class="sponsor-top">
+                <div class="sponsor-logo">
+                  <img :src="renderlyLogo" alt="Renderly Logo" />
+                </div>
+
+                <div class="sponsor-header">
+                  <h4>Renderly Web Consultants</h4>
+                  <div class="sponsor-category">Website Development and Managed Services</div>
+                </div>
+              </div>
+
+              <div class="sponsor-content">
+                <p>
+                  Renderly is a team of professional developers with over 15 years of combined experience 
+                  in front-end and back-end development. We build fast, reliable, and scalable websites 
+                  tailored to your business needs
+                </p>
+
+                <div class="sponsor-specialties">
+                  <div class="specialty-tag">Web Development</div>
+                  <div class="specialty-tag">Managed Services</div>
+                  <div class="specialty-tag">Custom Solutions</div>
+                  <div class="specialty-tag">Performance Optimization</div>
+                </div>
+              </div>
+            </div>
+
             <!-- waiting for confirmation
             <div class="sponsor-card">
               <div class="sponsor-top">
@@ -103,7 +131,9 @@ export default {
     return {
       // require() is the most compatible approach across Vue CLI/Webpack setups
       // and guarantees a string URL for <img src="">
-      rmsLogo: require('@/assets/rms_logo.jpg')
+      rmsLogo: require('@/assets/rms_logo.jpg'),
+      // liveWireLogo: require('@/assets/livewire_logo.png'),
+      renderlyLogo: require('@/assets/renderly.png')
     }
   }
 }
@@ -234,8 +264,8 @@ export default {
 }
 
 .sponsor-logo img {
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 120px;
+  max-height: 120px;
   width: auto;
   height: auto;
   object-fit: contain;
