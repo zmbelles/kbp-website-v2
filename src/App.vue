@@ -9,6 +9,7 @@
         <router-link to="/pictures" class="nav-link">Pictures</router-link>
         <router-link to="/driver-profiles" class="nav-link">Driver Profiles</router-link>
         <router-link to="/sponsors" class="nav-link">Sponsors</router-link>
+        <router-link to="/services" class="nav-link">Services</router-link>
       </nav>
     </header>
 
