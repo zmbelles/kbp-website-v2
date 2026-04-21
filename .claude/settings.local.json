@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node /Users/zacharybelles/Documents/GitHub/kbp-website-v2/scripts/inject-meta.js)"
+    ]
+  }
+}
