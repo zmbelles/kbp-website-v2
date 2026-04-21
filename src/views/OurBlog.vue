@@ -10,50 +10,24 @@
         </div>
 
         <div class="blog-content">
-          <div class="coming-soon-section">
-            <h3>Blog Coming Soon!</h3>
-            <p>
-              New team, new experiences, new stories. We're working hard to bring you the best content possible starting in the 2026 season.
-              The good, the bad, the ugly, and all the behind the scenes look into what makes us tick.
-            </p>
+          <div class="season-group">
+            <h3 class="season-heading">2026 Season</h3>
 
-            <div class="feature-list">
-              <div class="feature-item">
-                <div class="feature-text">
-                  <h4>Race Day Stories</h4>
-                  <p>What actually happened out there (and what went wrong)</p>
+            <router-link to="/blog/2026/nmp-race-2" class="post-link">
+              <div class="post-item">
+                <div class="post-item-header">
+                  <span class="post-series-tag">Norway Motosports Park</span>
+                  <span class="post-result-tag">P8</span>
+                  <span class="post-date-tag">Apr 21, 2026</span>
                 </div>
+                <h4 class="post-item-title">NMP Race 2: Survival, Setbacks, and a P8</h4>
+                <p class="post-item-excerpt">
+                  A tough weekend turned into a solid result. Rebuilt, regrouped, and charged from P12
+                  to a P8 finish with a 3-tenth gap at the line.
+                </p>
+                <span class="post-read-more">Read more →</span>
               </div>
-
-              <div class="feature-item">
-                <div class="feature-text">
-                  <h4>Setup Notes</h4>
-                  <p>Things we learned the hard way</p>
-                </div>
-              </div>
-
-              <div class="feature-item">
-                <div class="feature-text">
-                  <h4>Random Photos</h4>
-                  <p>Pit shenanigans and track memories</p>
-                </div>
-              </div>
-
-              <div class="feature-item">
-                <div class="feature-text">
-                  <h4>Win Celebrations</h4>
-                  <p>Those sweet podium moments (when they happen)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="preview-section">
-            <h4>For now...</h4>
-            <p>
-              Check our Facebook for the latest drama and victories. We post way too much there anyway,
-              but hey, that's where all the good stuff is happening right now.
-            </p>
+            </router-link>
           </div>
         </div>
       </div>
@@ -132,81 +106,93 @@ export default {
   color: var(--kb-black);
 }
 
-.coming-soon-section {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.coming-soon-section h3 {
-  color: var(--kb-red);
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.coming-soon-section > p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+.season-group {
   margin-bottom: 2rem;
-  color: var(--kb-black);
-  opacity: 0.8;
 }
 
-.feature-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.feature-item {
-  padding: 1.5rem;
-  background: rgba(245, 245, 220, 0.3);
-  border-radius: 12px;
-  text-align: left;
-  transition: all 0.3s ease;
-}
-
-.feature-item:hover {
-  background: rgba(245, 245, 220, 0.5);
-  transform: translateY(-2px);
-}
-
-.feature-text h4 {
-  color: var(--kb-red);
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
-}
-
-.feature-text p {
-  font-size: 0.95rem;
-  color: var(--kb-black);
-  opacity: 0.7;
-  margin: 0;
-  line-height: 1.5;
-}
-
-.preview-section {
-  background: rgba(220, 20, 60, 0.05);
-  padding: 2rem;
-  border-radius: 16px;
-  border-left: 4px solid var(--kb-red);
-}
-
-.preview-section h4 {
-  color: var(--kb-red);
-  font-size: 1.3rem;
+.season-heading {
+  font-size: 0.8rem;
   font-weight: 700;
-  margin: 0 0 1rem 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.45);
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
 }
 
-.preview-section p {
-  font-size: 1rem;
-  line-height: 1.7;
+.post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-item {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(51, 51, 51, 0.08);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.post-item:hover {
+  border-color: rgba(220, 20, 60, 0.25);
+  box-shadow: 0 4px 16px rgba(51, 51, 51, 0.08);
+  transform: translateY(-1px);
+}
+
+.post-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.post-series-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.post-result-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+  background: rgba(220, 20, 60, 0.1);
+  color: var(--kb-red);
+  border: 1px solid rgba(220, 20, 60, 0.25);
+}
+
+.post-date-tag {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.45);
+  margin-left: auto;
+}
+
+.post-item-title {
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--kb-black);
-  margin: 0;
-  opacity: 0.8;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.post-item-excerpt {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(51, 51, 51, 0.7);
+  margin: 0 0 0.75rem 0;
+}
+
+.post-read-more {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--kb-red);
 }
 
 /* Mobile Responsive */
@@ -235,23 +221,6 @@ export default {
   .blog-content {
     padding: 2rem 1.5rem;
   }
-
-  .coming-soon-section h3 {
-    font-size: 1.7rem;
-  }
-
-  .feature-list {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .feature-item {
-    padding: 1.25rem;
-  }
-
-  .preview-section {
-    padding: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -275,11 +244,7 @@ export default {
     padding: 1.5rem 1rem;
   }
 
-  .coming-soon-section {
-    margin-bottom: 2rem;
-  }
-
-  .preview-section {
+  .post-item {
     padding: 1.25rem;
   }
 }
