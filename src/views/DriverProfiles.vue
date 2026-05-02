@@ -48,7 +48,7 @@
 						<img src="../assets/alexphoto.png" alt="Alex 'Koolaid Man' Koleczek" />
 					</div>
 					<div class="profile-content">
-						<h2 class="profile-name">Alex Koleczek #11</h2>
+						<h2 class="profile-name">Alex Koleczek #511</h2>
 						<p class="profile-meta">Tinley Park, IL • EMT • 206 Sr</p>
 
 					<div class="profile-bio">

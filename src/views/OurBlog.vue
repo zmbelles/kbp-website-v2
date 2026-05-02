@@ -16,7 +16,7 @@
             <router-link to="/blog/2026/nmp-race-2" class="post-link">
               <div class="post-item">
                 <div class="post-item-header">
-                  <span class="post-series-tag">Norway Motosports Park</span>
+                  <span class="post-series-tag">Norway Motorsports Park</span>
                   <span class="post-result-tag">P8</span>
                   <span class="post-date-tag">Apr 21, 2026</span>
                 </div>
