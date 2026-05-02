@@ -49,7 +49,7 @@
 					</div>
 					<div class="profile-content">
 						<h2 class="profile-name">Alex Koleczek #11</h2>
-						<p class="profile-meta">Tinley Park, IL • EMT in Training • 206 Sr</p>
+						<p class="profile-meta">Tinley Park, IL • EMT • 206 Sr</p>
 
 					<div class="profile-bio">
 						<p>
